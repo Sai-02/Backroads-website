@@ -357,6 +357,16 @@ Services
 Featured Tours
 ===============
 */
+.tour-card {
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+
+.tour-card:hover {
+  
+}
 
 /*
 =============== 
