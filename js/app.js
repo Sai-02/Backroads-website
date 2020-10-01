@@ -9,7 +9,7 @@ const date = (document.getElementById(
 const navBtn = document.getElementById("nav-toggle");
 const links = document.getElementById("nav-links");
 // add event listener
-navBtn.addEventListener("click", () => {
+navBtn.addEventListener("click",() => {
   links.classList.toggle("show-links");
 });
 
@@ -22,14 +22,14 @@ scrollLinks.forEach(link => {
     e.preventDefault();
     links.classList.remove("show-links");
 
-    const id = e.target.getAttribute("href").slice(1);
-    const element = document.getElementById(id);
+    const id = e.target.getAttribute("href").slice(2);
+    const element=document.getElementById(id);
     //
-    let position = element.offsetTop - 62;
+    let position=element.offsetTop - 62;
 
     window.scrollTo({
-      left: 0,
-      // top: element.offsetTop,
+      left:0,
+      //top: element.offsetTop,
       top: position,
       behavior: "smooth"
     });
